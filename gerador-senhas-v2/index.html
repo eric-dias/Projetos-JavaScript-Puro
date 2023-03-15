@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="register-container">
+
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1>Seja bem-vindo</h1>
+            </div>
+        </div>
+
+        <div id="register-form">
+            <h2>Crie sua conta:</h2>
+            <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+            <div class="form-control">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            <p>Quer ajuda para criar uma senha segura? <span id="generate-password">Clique aqui.</span></p>
+
+            <div id="password-options">
+                <p>Selecione as opções que você  deseja:</p>
+                <div class="form-options">
+                    <label for="quantidade">Quantidade de caracteres:</label>
+                    <input type="number" min="8" max="30" id="quantidade">
+                </div>
+                <div class="form-options">
+                    <label for="letras">Letras:</label>
+                    <input type="checkbox" id="letters-check">
+                </div>
+                <div class="form-options">
+                    <label for="numeros">Números:</label>
+                    <input type="checkbox" id="numbers-check">
+                </div>
+                <div class="form-options">
+                    <label for="simbolos">Símbolos:</label>
+                    <input type="checkbox" id="symbols-check">
+                </div>     
+                <input type="submit" value="Criar senha" id="create-btn">
+            </div>
+
+            <div id="generated-password">
+               <p>Aqui está a sua senha:</p> 
+               <h4></h4>
+               <input type="submit" value="Copiar" id="copy-btn">
+            </div>
+            <div class="form-control">
+                <label for="confirmPassword">Confirmação de Senha</label>
+                <input type="password" id="confirmPassword" placeholder="Confirme a sua Senha">
+            </div>
+            <input type="submit" value="Cadastrar" id="submit-btn">
+        </div>
+    </div>
+</body>
+</html>

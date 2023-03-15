@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+
+        <div class="header">
+
+            <h1>Salve a sua próxima tarefa:</h1>
+            <form class="task-entry">
+                <input type="text" id="textInput" placeholder="O que você vai fazer?">
+                <button type="submit" id="add-Btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+
+
+<!--           <div class="task-entry">
+                <input type="text" id="textInput" placeholder="O que você vai fazer?">
+                <button type="submit" id="add-Btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+           </div>    
+-->
+        </div>        
+            
+        <div class="task-container hide">
+            <h1>Estas são as suas tarefas: </h1>
+            <ul id="task-list">
+                <li class="task-item template hide">
+
+                    <span class="task-title"></span>
+
+                    <div class="edit-buttons">
+                    <button type="submit" id="checkBtn" class="editBtn check-btn">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+
+                    <button type="submit" id= "deleteBtn" class="editBtn delete-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    </div>
+                    
+                </li>
+
+            </ul>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
